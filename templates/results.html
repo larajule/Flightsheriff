@@ -1,0 +1,40 @@
+<doctype html="">
+<title>Search Results - AIRPORTS</title>
+<bo>
+<tabl>
+<tr><td><img src="/static/img/blank.gif"  width="100" height="40"</td></tr>
+<center><h1 style="font-size:28px"><b><i>HERE ARE YOUR RESULTS:</i></b></h1>
+<h2></h2>
+</tabl>
+
+
+<tabl>
+<tr><td><center>{{ startairport.name }}</center></td>
+<td><img src="/static/img/arrow.png"  width="100" height="40" ></td>
+<td><center>{{ endairport.name }}</center></td></tr>
+</tabl>
+
+<table>
+<tr><td>Distance:</td><td>{{ mytravelplan.distance }} km  </td></tr>
+<tr><td>Liter Kerosin:</td><td>{{ mytravelplan.kerosininliter  }} Liter  </td></tr>
+<tr><td>CO2 in kg:</td><td>{{ mytravelplan.co2_emission_kg }} kg </td></tr>
+<tr><td>Trees:</td><td>{{ mytravelplan.trees }}  </td></tr>
+<tr><td>Consumption Fee: </td><td>{{ mytravelplan.fee }} Euro</td></tr>
+<tr><td>Offset: </td><td><a href="https://offset.climateneutralnow.org/allprojects">NEUTRAL YOUR FLIGHT!</a></td></tr>
+</table>
+
+<table>
+<tr><td> <img src="{{ startairport.image }}" alt="{{ startairport.name }}"  height="300" width="400"> </td>
+<td><img src="/static/img/blank.gif"  width="100" height="40"</td>
+<td>  <img src="{{ endairport.image }}" height="300" width="400"> </td></tr>
+<tr><td></td><td></td><td>Take the train and visit {{ sights_db.name }}</td></tr>
+<tr><td></td><td></td><td> <a href="{{ sights_db.wikilink }}">{{ sights_db.wikilink }}</a></td></tr>
+<tr><td></td><td></td><td> <a href="https://www.bahn.de/p/view/index.shtml">Book your train ride here</a></td></tr>
+</table>
+
+
+
+</center>
+</bo>
+
+</doctype>
